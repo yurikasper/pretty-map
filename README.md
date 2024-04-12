@@ -3,7 +3,7 @@
 Generate pretty (and print friendly!) walking maps.
 Made this when I was planning a trip and wanted nice looking (printed) route maps for reference.
 
-Try it out [here](https://yurikasper.github.io/pretty-map/)
+Try it out [here](https://yurikasper.github.io/pretty-map/dist/)
 
 ![Map Capture](screenshots/capture.png?raw=true "Map Capture")
 
