@@ -1,0 +1,68 @@
+:root {
+    --route-color: var(--bs-primary);
+    --map-invert: 0;
+    --map-contrast: 1;
+}
+
+body {
+    background-color: #262626;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+#control-bar {
+    display: flex;
+    align-items: center;
+    width: max-content;
+    margin-inline: auto;
+    gap: 2.5rem;
+}
+
+.control-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form-switch {
+    display: grid;
+    place-items: center;
+}
+
+.form-label, .form-check-label {
+    color: white;
+    margin-bottom: .2rem;
+}
+
+.form-control {
+    width: 6rem;
+    text-align: center;
+}
+
+.btn {
+    width: 6rem;
+}
+.h3rem {
+    height: 3rem;
+}
+
+#map {
+    height: 500px;
+    width: 700px;
+    margin: auto;
+    margin-top: 5rem;
+
+    filter: invert(var(--map-invert)) contrast(var(--map-contrast));
+}
+
+/* fix route button icon alignment */
+.leaflet-routing-collapse-btn.leaflet-routing-collapse-btn {
+    left: 2px;
+    top: 0;
+}
+
+/* custom color picker input */
+.clr-field button {
+    left: 0px;
+    width: 100%;
+    border-radius: var(--bs-border-radius);
+}
