@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pretty Walking Map</title>
+    <script src="bundle.js"></script>
+</head>
+<body>
+    <div id="map"></div>
+    <br>
+    <div id="control-bar">
+        <div class="mb-3 control-item">
+            <label class="form-label" for="route-color">Path Color</label>
+            <input class="form-control h3rem" type="text" id="route-color" value="var(--bs-primary)">
+        </div>
+
+        <div class="mb-3 control-item">
+            <label class="form-label" for="contrast">Contrast</label>
+            <input class="form-control h3rem" type="number" id="contrast" value="1.00" step="0.1">
+        </div>
+
+        <div class="mb-3 control-item">
+            <label class="form-check-label" for="invert-switch">Invert</label>
+            <div class="form-check form-switch h3rem">
+                <input class="form-check-input" type="checkbox" role="switch" id="invert-switch">
+              </div>
+              
+        </div>
+
+        <button id="control-toggle" class="btn btn-light">Hide Controls</button>
+    </div>
+</body>
+</html>
